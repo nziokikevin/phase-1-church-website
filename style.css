@@ -18,6 +18,50 @@ a{
     align-items: center;
     justify-content: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: black;
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: red;
+    background-color: transparent;
+    border: 3px solid red;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.cta:hover{
+    background-color: red;
+    color: white;
+
+}
+
+h1{
+    font-size:40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1 span{
+    color: red;
+}
 /*hero section*/
 #hero{
     background-image: url(./pics/church1.jpg);
@@ -69,24 +113,8 @@ a{
 #hero h1:nth-child(2) span{
     animation-delay: 1.5s;
 }
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: red;
-    background-color: transparent;
-    border: 3px solid red;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-#hero .cta:hover{
-    background-color: red;
-    color: white;
 
-}
+/*end of hero section*/
 
 /*keyframes*/
 @keyframes text_reveal_box{
@@ -112,3 +140,88 @@ a{
 }
 /*end of key frames*/
 
+/*start of service section*/
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#services .service-bottom{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+#services .service-item{
+    background-image: url("./pics/church2.jpg");
+    background-size: cover;
+    margin: 10px 5%;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#services .service-item:after{
+    content:'';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: black;
+    opacity: .7;
+    position: absolute;
+    z-index: -1;
+}
+#services .service-item h2{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-item p{
+    color: white;
+    text-align: left;
+}
+#services .service-item ol li{
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+/*end of service section*/
+
+/*about section*/
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 1200px;
+}
+#about .col-right{
+    width: 100%;
+} 
+#about .col-right h2{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .04rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+}
+#about .col-right .cta{
+    margin-bottom: 50px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+/*end of about section*/
