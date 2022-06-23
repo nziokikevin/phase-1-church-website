@@ -1,3 +1,12 @@
+document.addEventListener('scroll', () => {
+	let scrollPosition = window.scrollY;
+	if(scrollPosition > 250){
+		header.style.backgroundColor = 'grey';
+	}else{
+		header.style.backgroundColor= 'transparent';	
+	}
+})
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -10,3 +19,5 @@ fetch('https://bible-references.p.rapidapi.com/api/verses/kjv/Genesis/Genesis%20
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+	//document.addEventListener(DOMContentLoaded, function())

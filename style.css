@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -79,6 +80,7 @@ h1 span{
 }
 #header .header{
     min-height: 8vh;
+    transition: .3s ease;
 }
 #header .navbar{
     display: flex;
@@ -87,25 +89,24 @@ h1 span{
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 15px;
+    padding: 0 12px;
 }
 #header .navlist ul{
-    position: absolute;
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
     list-style: none;
-    background-color: black;
-    background-position: top-center;
-    top: 0;
-    width: 100vh;
-    height: 100vh;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+
+}
+#header .navlist ul li{
+    display: inline-block;
+}
+#header .navlist ul li a{
+    font-size: 15px;
 }
 #header .navlist ul a{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: .2rem;
     text-decoration: none;
@@ -114,39 +115,9 @@ h1 span{
     padding: 20px;
     display: block;
 }
-#header .navlist ul a::after{
-    content: '';
-    position: absolute;
-    left:50%;
-    top: 50%;
+#header .navlist ul li:hover a{
     color: red;
-    font-size: 10px;
-    letter-spacing: 50px;
-    z-index: -1;
 }
-#header .navlist ul li:hover::after{
-
-}
-#header .hamburger{
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-    position: relative;
-    border: 3px solid white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    cursor: pointer;
-}
-#header .hamburger .bar{
-    background-color: white;
-    position: relative;
-    height: 2px;
-    width: 30px;
-}
-
 /*end of header section*/
 
 /*hero section*/
