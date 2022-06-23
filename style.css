@@ -68,6 +68,87 @@ h1 span{
     color: white;
 }
 
+/*header section*/
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: auto;
+    width: 100vw;
+}
+#header .header{
+    min-height: 8vh;
+}
+#header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 15px;
+}
+#header .navlist ul{
+    position: absolute;
+    list-style: none;
+    background-color: black;
+    background-position: top-center;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#header .navlist ul a{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+#header .navlist ul a::after{
+    content: '';
+    position: absolute;
+    left:50%;
+    top: 50%;
+    color: red;
+    font-size: 10px;
+    letter-spacing: 50px;
+    z-index: -1;
+}
+#header .navlist ul li:hover::after{
+
+}
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+#header .hamburger .bar{
+    background-color: white;
+    position: relative;
+    height: 2px;
+    width: 30px;
+}
+
+/*end of header section*/
+
 /*hero section*/
 #hero{
     background-image: url(./pics/church1.jpg);
@@ -315,25 +396,3 @@ h1 span{
 }
 /*end of footer section*/
 
-/*media query for tablet*/
-@media only screen and (min-width: 770px){
-    .cta{
-        font-size: 2.5rem;
-        padding: 20px 60px;
-    }
-    h1{
-        font-size: 6rem;
-    }
-
-    /*hero section*/
-    #hero h1{
-        font-size: 5rem;
-    }
-    /*end of hero section*/
-
-    /*service section*/
-    
-     /* end of service section*/
-}
-
-/*end of media query for tablet*/
