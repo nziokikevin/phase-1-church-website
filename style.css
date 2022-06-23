@@ -62,6 +62,12 @@ h1{
 h1 span{
     color: red;
 }
+.brand h1{
+    font-size: 35px;
+    text-transform: transparent;
+    color: white;
+}
+
 /*hero section*/
 #hero{
     background-image: url(./pics/church1.jpg);
@@ -227,6 +233,107 @@ h1 span{
 /*end of about section*/
 
 /*contact section*/
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact .contact-items{
+    width: 50%;
+}
+#contact .contact-item{
+    width: 80%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 20px 0;
+    margin: 30px;
+    flex-direction: column;
+    transition: .2s;
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0;
+
+}
+#contact .icon{
+    margin: o auto;
+    margin-bottom: 10px;
+    width: 70px;
+}
+#contact .contact-info h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+#contact .contact-info h2{
+    font-size: 15px;
+    font-weight: 500;
+   line-height: 13px;
+    margin-bottom: 5px;
+}
 
 
 /*end of contact section*/
+
+/*footer section*/
+#footer{
+    background-image: linear-gradient(60deg, grey 0%, black 100%)
+}
+#footer .footer{
+    min-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+#footer h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: .2px;
+}
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0 5px;
+    border-spacing: 20px;
+}
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .2s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+/*end of footer section*/
+
+/*media query for tablet*/
+@media only screen and (min-width: 770px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1{
+        font-size: 6rem;
+    }
+
+    /*hero section*/
+    #hero h1{
+        font-size: 5rem;
+    }
+    /*end of hero section*/
+
+    /*service section*/
+    
+     /* end of service section*/
+}
+
+/*end of media query for tablet*/
