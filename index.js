@@ -23,10 +23,10 @@ const getVerse = async () => {
 }
 getVerse()
 
-const form = document.querySelector('.form');
-const submitInput = form[0].querySelector('input[type="submit"]');
+const form = document.querySelectorAll('.form');
+const submitInput = form[0].querySelector('[type="submit"]');
 
-function getDataForm(e){
+function getData(e){
 	e.preventDefault();
 	const formData = new FormData(form[0]);
 	alert(formData.get('nameField') + '-' + formData.get('emailField'));
@@ -34,5 +34,5 @@ function getDataForm(e){
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-	submitInput.addEventListener('click', getDataForm, false);
+	submitInput.addEventListener('click', getData, false);
 }, false);
