@@ -1,4 +1,4 @@
-# **Phase-1-Main-Project.
+# **Phase-1-Main-Project.**
 ## **Title:**
 Life Church Website.
 
