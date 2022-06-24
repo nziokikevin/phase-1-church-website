@@ -119,7 +119,37 @@ h1 span{
     color: red;
 }
 /*end of header section*/
+/*v.o.d section*/
+.verse-container{
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    max-width: 1300px;
+}
+.text{
+    text-align: center;
+    font-style: italic;
+}
+.verse{
+    font-size: 20px;
+}
+hr{
+    margin: 10px 0;
+    width: 60%;
+    border: 1px solid grey;
+}
 
+
+/*v.o.d section*/
 /*hero section*/
 #hero{
     background-image: url(./pics/church1.jpg);
@@ -291,7 +321,11 @@ h1 span{
     margin: 0 auto;
 }
 #contact .contact-items{
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
 }
 #contact .contact-item{
     width: 80%;

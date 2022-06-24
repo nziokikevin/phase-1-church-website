@@ -7,17 +7,20 @@ document.addEventListener('scroll', () => {
 	}
 })
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'cf53fe73d5msh2cc045188fbfc09p185443jsn07764d73668e',
-		'X-RapidAPI-Host': 'bible-references.p.rapidapi.com'
-	}
-};
 
-fetch('https://bible-references.p.rapidapi.com/api/verses/kjv/Genesis/Genesis%201', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+const text = document.querySelector('.text');
+const verse = document.querySelector('.verse')
+const getVerse = async () => {
+	const res = await fetch('https://type.fit/api/verses');
+	const verses = await res.json();
+	const num = Math.floor(Math.random()*verses.length);
+	const item = verses[num];
+	const vod = item.text;
+	const verseName = item.verse;
+	text.innerText = vod;
+	verse.innerText = verseName;
+	//console.log(item)
+}
+getVerse()
 
 	//document.addEventListener(DOMContentLoaded, function())
