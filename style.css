@@ -368,6 +368,29 @@ tr{
 
 /*end of join section*/
 
+/*form section*/
+.form .nameField{
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.form label{
+    display: block;
+    margin: 1px 0;
+}
+.form label input{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 15px;
+}
+.form input[type="submit"]{
+    font-size: 20px;
+    color: black;
+    margin-top:20px;
+}
+.form input[type="submit"]:hover{
+    color: red;
+}
 
 /*contact section*/
 #contact .contact{
