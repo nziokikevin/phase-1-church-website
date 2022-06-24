@@ -147,9 +147,8 @@ hr{
     width: 60%;
     border: 1px solid grey;
 }
-
-
 /*v.o.d section*/
+
 /*hero section*/
 #hero{
     background-image: url(./pics/church1.jpg);
@@ -229,6 +228,11 @@ hr{
 /*end of key frames*/
 
 /*start of service section*/
+.services{
+    background-color: grey;
+    width: 1200px;
+    height: auto;
+}
 #services .services{
     flex-direction: column;
     text-align: center;
@@ -244,7 +248,7 @@ hr{
     display: flex;
 }
 #services .service-item{
-    background-image: url("./pics/church2.jpg");
+    background-image: url;
     background-size: cover;
     margin: 10px 5%;
     flex-basis: 80%;
@@ -258,6 +262,32 @@ hr{
     z-index: 1;
     overflow: hidden;
 }
+/*table section*/
+table{
+    width: 800px;
+
+}
+th{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
+td{
+    font-size: 15px;
+}
+
+tr{
+    padding: 8px;
+    
+}
+/*table section*/
 #services .service-item:after{
     content:'';
     left: 0;
@@ -270,17 +300,17 @@ hr{
     z-index: -1;
 }
 #services .service-item h2{
-    color: white;
+    color: black;
     font-size: 15px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 #services .service-item p{
-    color: white;
+    color: black;
     text-align: left;
 }
 #services .service-item ol li{
-    color: white;
+    color: black;
     font-size: 15px;
     text-align: left;
 }

@@ -22,5 +22,3 @@ const getVerse = async () => {
 	//console.log(item)
 }
 getVerse()
-
-	//document.addEventListener(DOMContentLoaded, function())
