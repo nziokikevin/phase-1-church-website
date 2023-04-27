@@ -6,7 +6,7 @@ Life Church Website.
 Kevin Nzioki
 
 ## **Description:**
-This project is a simple responsive website that has a feature of generating Bible verses from a public API.
+This project is a simple website that has a feature of generating Bible verses that are being requested from a public API.
 Inspiration to this project is the ability of a Church website to impact anyone visiting the website and getting impacted by a verse or two.
 
 ## **Features:**
